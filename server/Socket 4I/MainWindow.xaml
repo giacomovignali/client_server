@@ -1,0 +1,28 @@
+﻿<Window x:Class="Socket_4I.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Socket_4I"
+        mc:Ignorable="d"
+        Title="SERVER" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="471*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lstMessaggi" HorizontalAlignment="Left" Height="268" Margin="10,41,0,0" VerticalAlignment="Top" Width="139" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnInvia" Content="▶" HorizontalAlignment="Left" Margin="233,126,0,0" VerticalAlignment="Top" Width="33" Click="btnInvia_Click" Grid.Column="1" Background="{x:Null}" Height="23"/>
+        <TextBox x:Name="txtTo" HorizontalAlignment="Left" Height="23" Margin="108,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtMessaggio" HorizontalAlignment="Left" Height="23" Margin="108,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="lbl_ip" Content="" HorizontalAlignment="Left" Margin="278,10,0,0" VerticalAlignment="Top" Width="183" Grid.Column="1"/>
+        <Label Content="INSERIRE IP CLIENT" HorizontalAlignment="Left" Margin="108,41,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="INSERIRE MESSAGGIO" HorizontalAlignment="Left" Margin="108,95,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="btn_elimina" Content="🗑" HorizontalAlignment="Left" Margin="271,126,0,0" VerticalAlignment="Top" Width="30" Background="{x:Null}" Height="23" />
+        <ListBox x:Name="lstInviati" HorizontalAlignment="Left" Height="129" Margin="108,180,0,0" VerticalAlignment="Top" Width="158" Grid.Column="1" />
+        <Label Content="MESSAGGI INVIATI" HorizontalAlignment="Left" Margin="108,149,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="btn_elimina_Copy" Content="🗑" HorizontalAlignment="Left" Margin="271,126,0,0" VerticalAlignment="Top" Width="30" Background="{x:Null}" Height="23" Grid.Column="1" Click="btn_elimina_Copy_Click"/>
+        <Label Content="MESSAGGI RICEVUTI" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Bold" Foreground="#FF8FD104"/>
+
+    </Grid>
+</Window>
